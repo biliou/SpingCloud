@@ -1,5 +1,5 @@
 server:
-  port: 8040
+  port: 8050
 spring:
   application:
     name: spring-cloud-config-server
@@ -11,3 +11,9 @@ spring:
           search-paths: config-repo                      # git仓库地址下的相对地址，可以配置多个，用,分割。
           username: biliou         # git仓库的账号
           password: vicki2078      # git仓库的密码
+
+#将server端当做一个服务注册到eureka中
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:123@server1:8100/eureka/,http://admin:123@server2:8000/eureka/
