@@ -1,0 +1,22 @@
+#指定服务端口
+#server:
+#  port: 8761
+#eureka:
+#  instance:
+#    hostname: master
+#  client:
+#    registerWithEureka: false  #表示是否将自己注册到Eureka Server，默认为true
+#    fetchRegistry: false #表示是否从Eureka Server获取注册信息，默认为true
+#    serviceUrl:
+#      defaultZone: http://backup:8760/eureka/
+
+#--------------------------------------
+#启动命令 java -jar eureka-server-0.0.1-SNAPSHOT.jar - -spring.profiles.active=peer1
+
+
+#为应用起个名字
+spring:
+  application:
+    name: eureka-server-eureka
+  profiles:
+    active: server1

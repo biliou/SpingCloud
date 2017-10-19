@@ -1,0 +1,14 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:123@server1:8100/eureka/,http://admin:123@server2:8000/eureka/
+server:
+  port: 9000
+spring:
+  application:
+    name: spring-cloud-producer
+
+#添加服务熔断
+feign:
+  hystrix:
+    enabled: true

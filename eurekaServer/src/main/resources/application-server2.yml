@@ -1,0 +1,9 @@
+server:
+  port: 8100
+ 
+eureka:
+  instance:
+    hostname: server2
+  client:
+    service-url:
+      defaultZone: http://server1:8000/eureka
