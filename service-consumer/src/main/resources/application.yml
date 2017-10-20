@@ -3,10 +3,10 @@ eureka:
     serviceUrl:
       defaultZone: http://admin:123@server1:8100/eureka/,http://admin:123@server2:8000/eureka/
 server:
-  port: 9003
+  port: 9004
 spring:
   application:
-    name: spring-cloud-consumer2
+    name: spring-cloud-consumer1
 
 #服务熔断开启
 feign:
