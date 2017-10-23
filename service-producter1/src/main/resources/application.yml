@@ -7,6 +7,10 @@ server:
 spring:
   application:
     name: spring-cloud-producer
+#链路追踪-添加zipkin server的地址
+  zipkin:
+    base-url: http://localhost:9031
+
 
 #添加服务熔断
 feign:

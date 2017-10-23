@@ -5,10 +5,12 @@ eureka:
 server:
   port: 9004
 spring:
-  application:
-    name: spring-cloud-consumer1
-
+#服务链路追踪
+  zipkin:
+    base-url: http://localhost:9031
+    
 #服务熔断开启
 feign:
   hystrix:
     enabled: true
+    
