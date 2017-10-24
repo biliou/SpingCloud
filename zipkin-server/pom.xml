@@ -67,23 +67,33 @@
 		<dependency>
 			<groupId>io.zipkin.java</groupId>
 			<artifactId>zipkin-autoconfigure-ui</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 
+
 		<!-- mysql存储 -->
-		<!-- <dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>io.zipkin.java</groupId>
 			<artifactId>zipkin-autoconfigure-storage-mysql</artifactId>
-		</dependency> -->
+		</dependency>
+
+		<dependency>
+			<groupId>org.jooq</groupId>
+			<artifactId>jooq</artifactId>
+			<version>3.9.6</version>
+		</dependency>
+
+
+		<!-- <dependency> <groupId>io.zipkin.java</groupId> <artifactId>zipkin-storage-mysql</artifactId> 
+			<version>1.28.0</version> </dependency> -->
 
 	</dependencies>
 
@@ -92,7 +102,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Camden.SR7</version>
+				<version>Dalston.SR4</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
