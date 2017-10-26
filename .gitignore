@@ -1,3 +1,6 @@
 
 #Java
-target
+#target 存放 maven build以后的文件
+target 
+#build 存放 日志信息
+build 
