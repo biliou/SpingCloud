@@ -29,7 +29,8 @@ public class MainController {
     public String index(@RequestParam String name) {
 		LOG.log(Level.INFO, "===================================================================calling trace service-producer "+ port);
 		
-        return "hello "+name+"，this is producer 2  send first messge, from " + port;
+		return "SUCCESS";
+//        return "hello "+name+"，this is producer 2  send first messge, from " + port;
     }
 	
 	/**
